@@ -1,0 +1,13 @@
+<div id="menu">
+	<a href="<?php echo $this->sg?>" target="_top" style="display: block; background: transparent; width: 93px; height: 85px; position: absolute; top: 5px; left: 12px; z-index: 2"></a>
+	<div class="navi">
+		<?php foreach($this->menu($this->user) as $item) { ?>
+		<?php if (!empty($item['off'])) { continue; } ?>
+		<div class="button<?php echo isset($item['active']) ? ' on' : ''?>">
+		  <a target="_top" href="<?php echo $item['url']?>">
+		    <?php echo $item['title']; ?></a>
+		    </div>
+		<?php } ?>
+		<div class="clear"></div>
+	</div>
+</div>
