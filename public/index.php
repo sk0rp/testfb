@@ -2,6 +2,7 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
+
 // blokujemy dodatkowe requesty
 if (!empty($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'i.wp.pl') !== false) {
 	exit('1');
