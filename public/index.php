@@ -2,7 +2,6 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
-
 // blokujemy dodatkowe requesty
 if (!empty($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'i.wp.pl') !== false) {
 	exit('1');
@@ -10,7 +9,6 @@ if (!empty($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'i.wp.p
 if (!empty($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'flash-api') !== false) {
 	exit('1');
 }
-
 
 // Define path to application directory
 defined('APPLICATION_PATH')
